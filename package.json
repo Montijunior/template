@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Template repository for projects with similar configurations and settings",
   "private": true,
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
@@ -12,7 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.3.0",
     "css-loader": "^7.1.1",
+    "eslint": "^9.3.0",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.91.0",
