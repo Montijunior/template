@@ -1,9 +1,12 @@
 import js from "@eslint/js";
 
+
 export default [
   js.configs.recommended,
+
   {
     rules: {
+       
       semi: "error",
 
       "prefer-const": "off",
@@ -14,7 +17,7 @@ export default [
 
       "no-var": "warn",
 
-      "no-undefined": "warn",
+      "no-undefined": "off",
 
       "no-proto": "error",
 
@@ -26,7 +29,15 @@ export default [
 
       "no-duplicate-imports": "error",
 
-      "no-console": "warn"
+      "no-console": "warn",
+
+      "max-len": ["error", { code: 180 }],
+
+      "no-multiple-empty-lines": "error",
+
+      "indent": ["error", 2],
+
+      "quotes": ["warn", "double"]
     }
   }
 ];
