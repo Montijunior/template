@@ -37,7 +37,15 @@ export default [
 
       "indent": ["error", 2],
 
-      "quotes": ["warn", "double"]
+      "quotes": ["warn", "double"],
+      
+      "no-async-promise-executor": "error",
+
+      "no-await-in-loop": "error",  
+
+      "max-nested-callbacks": ["error", 3],
+
+      "prefer-promise-reject-errors": "error"
     }
   }
 ];
